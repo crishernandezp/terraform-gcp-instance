@@ -26,7 +26,7 @@ resource "google_compute_instance" "tf-vm" {
     network    = var.gcp-network
     subnetwork = var.gcp-network
 
-    access_config { nat_ip = google_compute_address.tf-vm-ip.address }
+    access_config {nat_ip = google_compute_address.tf-vm-ip.address}
   }
 
   lifecycle {
